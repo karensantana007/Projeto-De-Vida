@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('https://dplnews.com/wp-content/uploads/2023/12/dplnews_justicia-ley-digital_mc221223-scaled.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.296); /* escurece a imagem */
+    z-index: 0;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.803);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form h2 {
+    font-size: 26px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+form a {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+form a:hover {
+    color: #000;
+}
+
+form p {
+    color: #b00020;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+form {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form h2 {
+    font-size: 26px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+form a {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+form a:hover {
+    color: #000;
+}
+
+form .erro {
+    color: #b00020;
+    margin-bottom: 10px;
+    font-size: 14px;
+}

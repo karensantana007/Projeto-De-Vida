@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;           
+    background-color: #d0e3f1ea;     
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* ajuste conforme necessário */
+  }
+  
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff; /* cor do texto */
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+.botao-voltar img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+header {
+    background-color: #19498d;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+.menu-hamburguer {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+.menu-hamburguer span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+  
+.menu-container {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  background: #13548e;
+  padding: 10px;
+  display: none;
+  gap: 6px;
+  flex-direction: column;
+  border-radius: 4px;
+}
+  
+.menu-container a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+  
+.menu-hamburguer {
+    width: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px; 
+    cursor: pointer;
+    padding: 8px 0; 
+}
+  
+  .menu-hamburguer span {
+    display: block;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+  }
+
+  .menu-container a:hover {
+   color: #9ed0f4;
+  }
+  
+  .menu-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-wrapper:hover .menu-container {
+    display: flex;
+  }
+
+   
+  .footer-da-landing-page,
+  .footer-da-landing-page * {
+    box-sizing: border-box;
+  }
+  footer {
+      clear: both; /* Faz com que o footer sempre seja exibido após o conteúdo anterior */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 20px 0;
+      background-color: #125993; /* Cor de fundo do footer */
+      text-align: center;
+    }
+    
+    .footer-da-landing-page {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+  .redes-sociais {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 31px;
+  }
+  
+  ._2025-essence-and-future-todos-os-direitos-reservados {
+    color: rgba(255, 255, 255, 0.44);
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    top: 203px;
+  }
+  
+  .instagram-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 76px;
+  }
+  
+  .facebook-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 104px;
+  }
+  
+  .telefone-18-997770741 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 132px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .footer-da-landing-page,
+  .footer-da-landing-page * {
+    box-sizing: border-box;
+  }
+  
+  .footer-da-landing-page {
+    background: #125993;
+    height: 243px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .redes-sociais {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 31px;
+  }
+  
+  ._2025-essence-and-future-todos-os-direitos-reservados {
+    color: rgba(255, 255, 255, 0.44);
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    top: 203px;
+  }
+  
+  .instagram-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 76px;
+  }
+  
+  .facebook-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 104px;
+  }
+  
+  .telefone-18-997770741 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 132px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .line-28 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 99px;
+    height: 0px;
+    position: absolute;
+    left: 117px;
+    top: 50px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+  .avisos-legais {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 31px;
+  }
+  
+  .termos-de-uso {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 67px;
+  }
+  
+  .pol-tica-de-privacidade {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 95px;
+  }
+  
+  .pol-tica-de-cookies {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 123px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .line-29 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 99px;
+    height: 0px;
+    position: absolute;
+    left: 604px;
+    top: 50px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+  .contato {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 1161px;
+    top: 31px;
+  }
+  
+  .e-mail-essence-future-gmail-com {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 1093px;
+    top: 71px;
+  }
+  
+  .endere-o-rua-pref-jos-deliberador-300-vila-thaide {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 1093px;
+    top: 99px;
+    width: 284px;
+  }
+  
+  .line-30 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 59px;
+    height: 0px;
+    position: absolute;
+    left: 1168px;
+    top: 52px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+
+  .container {
+  max-width: 800px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ccc;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin: 8px 0 14px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn,
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: #1a242f;
+}
+
+
+.grafico-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 40px auto 20px auto;
+  }
+
+.grafico-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.grafico-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #182091;
+    pointer-events: none;
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resultado p {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.botao-refazer {
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 00;
+    background: #182091;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.botao-refazer:hover {
+    transform: scale(1.05);
+    background: #6e9dbd;
+}
+
+.text_sair {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text_sair h3 {
+    font-size: 1.0rem;
+    color: #182091;
+    font-weight: 600;
+}

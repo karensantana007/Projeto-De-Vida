@@ -1,0 +1,1318 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(fundo.jpg);
+    background-size: cover;           
+    background-repeat: no-repeat;     
+    background-position: center;      
+  }
+  
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.737); /* branco com 85% opacidade */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 370px;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .login-btn {
+    width: 370px;
+    background-color: #15425d;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background-color:#15425d;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  
+  .register-link a {
+    color:#15425d;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .input-group input {
+    width: 100%; /* em vez de 350px */
+  }
+  
+  .login-btn {
+    width: 100%; /* em vez de 370px */
+  }
+
+
+  
+  .p-gina-de-login,
+  .p-gina-de-login * {
+    box-sizing: border-box;
+  }
+  
+  .img_fundo {
+    width: 100%;
+    position: relative
+    ;
+  }
+  
+  .rectangle-8 {
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 25px;
+    width: 637px;
+    height: 395px;
+    position: absolute;
+    left: 132px;
+    top: 261px;
+  }
+  
+  
+  
+  .secao {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+    background-color: #001f3f; /* azul-marinho de fundo da seção */
+  }
+  
+  .topico {
+    font-size: large;
+    text-align: justify;
+    width: 400px;
+    background-color: #001f3f; /* mesma cor do fundo para continuidade */
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* sombra clara */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0; /* remove a borda arredondada */
+  }
+  
+  .topico h2 {
+    text-align: center;
+    color: #00d4ff; /* cor opcional para destacar o título */
+  }
+  
+  .topico h4 {
+    font-weight: normal;
+    color: white;
+  }
+  
+  .icone {
+    font-size: 2rem;
+    text-align: center;
+    color: #00d4ff; /* cor opcional para o ícone */
+    margin-bottom: 10px;
+  }
+  
+  
+  .rectangle-9 {
+    border-radius: 0px;
+    width: 341px;
+    height: 41px;
+    position: absolute;
+    left: 285px;
+    top: 407px;
+    overflow: visible;
+  }
+  
+  .rectangle-10 {
+    background: #f1f9ff;
+    border-radius: 50px;
+    width: 341px;
+    height: 41px;
+    position: absolute;
+    left: 285px;
+  }
+  
+  .texto-do-username {
+    color: #717171;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    left: 338px;
+    top: 420px;
+  }
+  
+  .senha {
+    color: #717171;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    left: 338px;
+    top: 472px;
+  }
+  
+  .icon-do-user2 {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 295px;
+    top: 415px;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  
+  .linha-de-separa-o {
+    width: 24px;
+    height: 0px;
+    position: absolute;
+    left: 329.5px;
+    top: 416px;
+    transform: translate(-0.5px, 0px);
+    overflow: visible;
+  }
+  
+  .linha-de-separa-o-1 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #878787;
+    border-width: 1px 0 0 0;
+    width: 24px;
+    height: 0px;
+    position: absolute;
+    left: 330px;
+    top: 467px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+  }
+  
+  .icon-da-senha {
+    border-radius: 25px;
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    left: 295px;
+    top: 467px;
+    object-fit: cover;
+  }
+  
+  .fundo-do-bot-o-login {
+    background: rgba(1, 106, 192, 0.6);
+    border-radius: 25px;
+    width: 99px;
+    height: 30px;
+    position: absolute;
+    left: 406px;
+    top: 535px;
+  }
+  
+  .bot-o-login {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    left: 437px;
+    top: 542px;
+  }
+  
+  .bot-o-create-your-account {
+    color: #1100ff;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 00;
+    position: absolute;
+    left: 517px;
+    top: 570px;
+    width: 190px;
+    height: 9px;
+  }
+  
+  .bot-o-create-your-account:hover {
+    color: rgb(90, 90, 90);
+  }
+  
+  .essence-1 {
+    width: 315px;
+    height: 105px;
+    position: absolute;
+    left: 23px;
+    top: 20px;
+    object-fit: cover;
+  }
+  
+  .bot-o-create-your-account {
+      color: #241ba1;
+      text-align: left;
+      font-family: "Inter-Regular", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      position: absolute;
+      left: 40px;
+      top: 570px;
+      text-decoration: none; /* tira o sublinhado */
+      cursor: pointer;
+    }
+    
+  
+    .group-1,
+    .group-1 * {
+      box-sizing: border-box;
+    }
+  
+    .group-1 {
+      position: relative;
+    }
+  
+    .icon-do-user {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      left: 9px;
+      top: 42px;
+      aspect-ratio: 1;
+    }
+  
+    .icon-do-user2 {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      left: 9px;
+      top: 39px;
+      aspect-ratio: 1;
+    }
+  
+    .rectangle-36 {
+      width: 1440px;
+      height: 79px;
+      position: absolute;
+      left: 0px;
+      top: 32px;
+      overflow: visible;
+    }
+  
+    .image-27 {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      left: 1370px;
+      top: 48px;
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+  
+    .ol-karen {
+      color: #ffffff;
+      text-align: left;
+      font-family: "Actor-Regular", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      position: absolute;
+      left: 1272px;
+      top: 65px;
+    }
+  
+    .image-31 {
+      width: 31px;
+      height: 31px;
+      position: absolute;
+      left: 26px;
+      top: 56px;
+      object-fit: cover;
+      aspect-ratio: 1;
+    }
+  
+    .essence-1-1 {
+      width: 308px;
+      height: 174px;
+      position: absolute;
+      left: 566px;
+      top: 0px;
+      object-fit: cover;
+      aspect-ratio: 308/174;
+    }
+    
+    .group-3,
+  .group-3 * {
+    box-sizing: border-box;
+  }
+  
+  .group-3 {
+      margin-left: 250px;
+          margin-bottom: 100px; /* Ajuste conforme necessário para criar espaço para o footer */
+  }
+  
+  .retangulo-13 {
+      z-index: 97;
+    background: #125993;
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 37px;
+    top: 100px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  
+  .retangulo-25 {
+    z-index: 1;
+    background: rgba(18, 89, 147, 0.5);
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  
+  .retangulo-26 {
+    background: rgba(18, 89, 147, 0.5);
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 433px;
+    top: 75px;
+  }
+  
+  .retangulo-27 {
+    background: rgba(18, 89, 147, 0.5);
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 848px;
+    top: 75px;
+  }
+  
+  .retangulo-13:hover,
+  .retangulo-17:hover,
+  .retangulo-19:hover,
+  .retangulo-25:hover,
+  .retangulo-26:hover,
+  .retangulo-27:hover,
+  .retangulo-16:hover,
+  .retangulo-22:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .saiba-mais,
+  .quem-somos,
+  .saber-mais,
+  .saber-mais2,
+  .o-que-voc-vai-encontrar-aqui,
+  .meu-projeto-de-vida {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .saber-mais,
+  .saber-mais2 {
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .saber-mais:hover,
+  .saber-mais2:hover {
+    color: #ffdd57;
+    text-shadow: 0 0 5px rgba(255, 221, 87, 0.7);
+  }
+  
+  /* RESPONSIVIDADE (opcional) */
+  @media (max-width: 768px) {
+    .group-3 {
+      padding: 20px;
+    }
+  
+  /*.rectangle-13:hover*/
+    .retangulo-17,
+    .retangulo-19,
+    .retangulo-25,
+    .retangulo-26,
+    .retangulo-27,
+    .retangulo-16,
+    .retangulo-22 {
+      width: 100% !important;
+      left: auto !important;
+      right: auto !important;
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 100px;
+    }
+  }
+  
+  .saiba-mais {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-ExtraLightItalic", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    font-style: italic;
+    position: absolute;
+    left: 525px;
+    top: 0px;
+  }
+  
+  .quem-somos {
+      z-index: 99;
+      color: #ffffff;
+      text-align: left;
+      font-family: "Lustria-Regular", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      position: absolute;
+      left: 134px;
+      top: 148px;
+      width: 131px;
+      height: 29px;
+      margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .botoes-centralizados {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre os botões */
+    margin-top: 750px;
+  }
+  
+  .rectangle-21,
+  .rectangle-23,
+  .rectangle-24 {
+    background: #125993;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 250px; /* Define um tamanho mínimo */
+    text-align: center;
+  }
+  
+  .rectangle-21:hover,
+  .rectangle-23:hover,
+  .rectangle-24:hover {
+    background: #0d4a7b;
+  }
+  
+  .line-1 {
+      z-index: 99;
+      margin-top: -1px;
+      border-style: solid;
+      border-color: #ffffff;
+      border-width: 1px 0 0 0;
+      width: 169px;
+      height: 0px;
+      position: absolute;
+      left: 122px;
+      top: 210px;
+      margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-2 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 233px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-3 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 256px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-4 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 280px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-5 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 305px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-6 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 329px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-7 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 357px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-8 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 383px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .line-9 {
+    z-index: 99;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 122px;
+    top: 410px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .retangulo-16 {
+    z-index: 99;
+    background: #125993;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    width: 114px;
+    height: 22px;
+    position: absolute;
+    left: 151px;
+    top: 460px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .saber-mais {
+  z-index: 99;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    left: 169px;
+    top: 462px;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+  
+  .retangulo-17 {
+    background: #125993;
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 467px;
+    top: 100px;
+  }
+  
+  .o-que-voc-vai-encontrar-aqui {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 497px;
+    top: 148px;
+    width: 294px;
+    height: 29px;
+  }
+  
+  .line-10 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 210px;
+  }
+  
+  .line-11 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 233px;
+  }
+  
+  .line-12 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 256px;
+  }
+  
+  .line-13 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 280px;
+  }
+  
+  .line-14 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 305px;
+  }
+  
+  .line-15 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 329px;
+  }
+  
+  .line-16 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 357px;
+  }
+  
+  .line-17 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 383px;
+  }
+  
+  .line-18 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 552px;
+    top: 410px;
+  }
+  
+  .retangulo-19 {
+    background: #125993;
+    width: 343px;
+    height: 410px;
+    position: absolute;
+    left: 881px;
+    top: 100px;
+  }
+  
+  .retangulo-22 {
+    background: #125993;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    width: 114px;
+    height: 22px;
+    position: absolute;
+    left: 996px;
+    top: 462px;
+  }
+  
+  .saber-mais2 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    left: 1013px;
+    top: 464px;
+  }
+  
+  .meu-projeto-de-vida {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;   
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 955px;
+    top: 148px;
+    width: 196px;
+    height: 29px;
+  }
+  
+  .line-19 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 210px;
+  }
+  
+  .line-20 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 233px;
+  }
+  
+  .line-21 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 256px;
+  }
+  
+  .line-22 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 280px;
+  }
+  
+  .line-23 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 305px;
+  }
+  
+  .line-24 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 329px;
+  }
+  
+  .line-25 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 357px;
+  }
+  
+  .line-26 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 383px;
+  }
+  
+  .line-27 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 169px;
+    height: 0px;
+    position: absolute;
+    left: 966px;
+    top: 410px;
+  }
+  
+  .footer-da-landing-page,
+  .footer-da-landing-page * {
+    box-sizing: border-box;
+  }
+  footer {
+      clear: both; /* Faz com que o footer sempre seja exibido após o conteúdo anterior */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 20px 0;
+      background-color: #125993; /* Cor de fundo do footer */
+      text-align: center;
+    }
+    
+    .footer-da-landing-page {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+  .redes-sociais {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 31px;
+  }
+  
+  ._2025-essence-and-future-todos-os-direitos-reservados {
+    color: rgba(255, 255, 255, 0.44);
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    top: 203px;
+  }
+  
+  .instagram-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 76px;
+  }
+  
+  .facebook-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 104px;
+  }
+  
+  .telefone-18-997770741 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 132px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .footer-da-landing-page,
+  .footer-da-landing-page * {
+    box-sizing: border-box;
+  }
+  
+  .footer-da-landing-page {
+    background: #125993;
+    height: 243px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .redes-sociais {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 31px;
+  }
+  
+  ._2025-essence-and-future-todos-os-direitos-reservados {
+    color: rgba(255, 255, 255, 0.44);
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 530px;
+    top: 203px;
+  }
+  
+  .instagram-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 76px;
+  }
+  
+  .facebook-essence-and-future {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 104px;
+  }
+  
+  .telefone-18-997770741 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 117px;
+    top: 132px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .line-28 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 99px;
+    height: 0px;
+    position: absolute;
+    left: 117px;
+    top: 50px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+  .avisos-legais {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 31px;
+  }
+  
+  .termos-de-uso {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 67px;
+  }
+  
+  .pol-tica-de-privacidade {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 95px;
+  }
+  
+  .pol-tica-de-cookies {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 605px;
+    top: 123px;
+    width: 162px;
+    height: 18px;
+  }
+  
+  .line-29 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 99px;
+    height: 0px;
+    position: absolute;
+    left: 604px;
+    top: 50px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+
+  /*   .line-28 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 99px;
+    height: 0px;
+    position: absolute;
+    left: 117px;
+    top: 50px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  } */
+
+
+  .contato {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 1161px;
+    top: 31px;
+  }
+  
+  .e-mail-essence-future-gmail-com {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 1093px;
+    top: 71px;
+  }
+  
+  .endere-o-rua-pref-jos-deliberador-300-vila-thaide {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Lustria-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 1093px;
+    top: 99px;
+    width: 284px;
+  }
+  
+  .line-30 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px 0 0 0;
+    width: 59px;
+    height: 0px;
+    position: absolute;
+    left: 1155px;
+    top: 52px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+  
+  .container{
+    align-items: center;
+  }
+  
+  .container:hover .retangulo-13{
+      transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .container:hover .retangulo-25{
+      transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-login {
+    position: absolute;
+    left: 406px;
+    top: 535px;
+    width: 99px;
+    height: 30px;
+    background: rgba(1, 106, 192, 0.6);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Efeito de hover no botão */
+  .btn-login:hover {
+    background-color: rgb(4, 58, 102);
+  }
+  
+  
