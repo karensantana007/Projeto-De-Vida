@@ -131,6 +131,17 @@ body {
     object-fit: contain;
   }
 
+
+  .back-button button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
   .login-container {
     display: flex;
     align-items: center;
@@ -172,7 +183,6 @@ body {
   
   .login-btn {
     width: 370px;
-    background-color: #15425d;
     color: #fff;
     padding: 12px;
     border: none;
@@ -182,10 +192,29 @@ body {
     transition: 0.3s ease-in-out;
   }
   
-  .login-btn:hover {
-    background-color:#15425d;
-  }
-  
+  .profile-button button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.profile-button img {
+  width: 20px;
+  height: 20px;
+}
+
+  .profile-button a {
+  text-decoration: none;
+  color: inherit;
+} 
+
   .register-link {
     text-align: center;
     margin-top: 15px;
@@ -1320,282 +1349,90 @@ body {
     left: 966px;
     top: 410px;
   }
-  
-  .footer-da-landing-page,
-  .footer-da-landing-page * {
-    box-sizing: border-box;
-  }
-  footer {
-      clear: both; /* Faz com que o footer sempre seja exibido após o conteúdo anterior */
-      position: relative;
-      bottom: 0;
-      width: 1905px;
-      padding: 20px 0;
-      background-color: #125993; /* Cor de fundo do footer */
-      text-align: center;
-    }
-    
-    .footer-da-landing-page {
-      width: 1905px;
-      margin: auto;
-      padding: 0 20px;
-    }
 
-    .footer-do-sobre-mim{
-      margin-top: 50px;
-      width: 1000px;
-      padding: 0 20px;
-      height: 220px;
-    }
-  
-  .redes-sociais {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 31px;
+
+
+
+
+footer {
+  background: linear-gradient(to right, #0e3c61, #125993);
+  color: #f0f0f0;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 6px;
+  line-height: 1.3;
+  color: #dcdcdc;
+  transition: color 0.3s ease;
+}
+
+.footer-section li i {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.footer-section li:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: none;
+  padding-top: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
-  
-  ._2025-essence-and-future-todos-os-direitos-reservados {
-    color: rgba(255, 255, 255, 0.44);
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 530px;
-    top: 203px;
-  }
-  
-  .instagram-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 76px;
-  }
-  
-  .facebook-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 104px;
-  }
-  
-  .telefone-18-997770741 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 132px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .footer-da-landing-page,
-  .footer-da-landing-page * {
-    box-sizing: border-box;
-  }
-  
-  .footer-da-landing-page {
-    background: #125993;
-    height: 243px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .redes-sociais {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 31px;
-  }
-  
-  ._2025-essence-and-future-todos-os-direitos-reservados {
-    color: rgba(255, 255, 255, 0.44);
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 530px;
-    top: 203px;
-  }
-  
-  .instagram-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 76px;
-  }
-  
-  .facebook-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 104px;
-  }
-  
-  .telefone-18-997770741 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 132px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .line-28 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 99px;
-    height: 0px;
-    position: absolute;
-    left: 117px;
-    top: 50px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
-  .avisos-legais {
-    color: #ffffff;
+
+  .footer-section {
     text-align: center;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 31px;
   }
-  
-  .termos-de-uso {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 67px;
+
+  .footer-section li i {
+    display: inline-block;
   }
-  
-  .pol-tica-de-privacidade {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 95px;
-  }
-  
-  .pol-tica-de-cookies {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 123px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .line-29 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 99px;
-    height: 0px;
-    position: absolute;
-    left: 604px;
-    top: 50px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
-  .contato {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 1161px;
-    top: 31px;
-  }
-  
-  .e-mail-essence-future-gmail-com {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 1093px;
-    top: 71px;
-  }
-  
-  .endere-o-rua-pref-jos-deliberador-300-vila-thaide {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 1093px;
-    top: 99px;
-    width: 284px;
-  }
-  
-  .line-30 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 59px;
-    height: 0px;
-    position: absolute;
-    left: 1168px;
-    top: 52px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
+}
+
+
+
 
   .container{
     align-items: center;
@@ -1972,7 +1809,7 @@ button:hover {
   width: 100%;
   background: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)),
               url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center/cover;
-  padding: 100px 40px;
+  padding:40px;
   text-align: center;
   overflow-x: hidden;
 }
@@ -2005,14 +1842,22 @@ button:hover {
     background-color: #3c8aa0;
 }
 
-
+/* HERO: Imagem de fundo no topo */
 .hero {
+  width: 100%;
+  
   background: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)),
               url('https://img.freepik.com/fotos-premium/um-grupo-de-pessoas-de-maos-dadas-no-meio-de-um-circulo-com-as-maos-umas-em-cima-das-outras_214111-441.jpg') no-repeat center center/cover;
   padding: 100px 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
+/* Texto dentro da hero */
 .hero-texto h1 {
   font-size: 36px;
   color: #e0e1dd;
@@ -2144,6 +1989,7 @@ button:hover {
 
 
 
+/* Seção azul de atuação */
 .atuacao-timeline {
   background-color: #102a45;
   width: 100%;
@@ -2152,7 +1998,8 @@ button:hover {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;     
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .timeline-minimal {
@@ -2187,7 +2034,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px; /* leve ajuste para alinhar com texto */
+  margin-top: 4px;
 }
 
 .timeline-entry .content {

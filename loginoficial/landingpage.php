@@ -33,7 +33,16 @@
       <img src="essence (1).png" alt="Logo" />
     </div>
 
-  </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="profile-button">
+  <a href="perfil.php">
+    <button>
+      <i class="fas fa-user"></i>
+      Olá!
+    </button>
+  </a>
+</div>
+
 </header>
 
         <div class="explorando-o-mundo-do-direito-e-construindo-um-futuro-com-conhecimento-e-estrat-gia">
@@ -105,45 +114,46 @@
 
 <div class="botoes-centralizados">
   <a href="direito.php" class="rectangle-21">Área de Direito</a>
-  <a href="como-se-conectam.html" class="rectangle-23">Como se conectam?</a>
-  <a href="profissao-juiz.html" class="rectangle-24">Profissão de Juiz</a>
+  <a href="como_se_conectam.php" class="rectangle-23">Como se conectam?</a>
+  <a href="juiz.php" class="rectangle-24">Profissão de Juiz</a>
 </div>
 
 <br><br><br><br><br><br><br><br>
 
-    <footer>
-        <div class="footer-da-landing-page">
-            <div class="redes-sociais">Redes Sociais</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-T+oR6LJP+FJlzZg6F7L+aUJSRhR4K9MCy9Fb9N+C9XtHoqe3T5XYsFvFhnnI/nkYId0OrBgV9SogRmK2UeaNmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-            <div class="_2025-essence-and-future-todos-os-direitos-reservados">
-                © 2025 - Essence and Future. Todos os direitos reservados.
-            </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Redes Sociais</h4>
+      <ul>
+        <li><i class="fab fa-instagram"></i> @Essence_and_Future</li>
+        <li><i class="fab fa-facebook"></i> Essence and Future</li>
+        <li><i class="fas fa-phone"></i> (18) 99777-0741</li>
+      </ul>
+    </div>
 
-            <div class="instagram-essence-and-future">
-                Instagram: @Essence_and_Future
-            </div>
-            
-            <div class="facebook-essence-and-future">Facebook: Essence and Future</div>
-            <div class="telefone-18-997770741">Telefone: (18) 997770741</div>
-            <div class="line-28"></div>
-            <div class="avisos-legais">Avisos Legais</div>
-            <div class="termos-de-uso">Termos de Uso</div>
-            <div class="pol-tica-de-privacidade">Política de Privacidade</div>
-            <div class="pol-tica-de-cookies">Política de Cookies</div>
-            <div class="line-29"></div>
-            <div class="contato">Contato</div>
-            <div class="e-mail-essence-future-gmail-com">
-                E-mail: Essence.Future@gmail.com
-            </div>
-            <div class="endere-o-rua-pref-jos-deliberador-300-vila-thaide">
-                Endereço: Rua Pref. José Deliberador, 300 -
-                <br />
-                Vila Thaide
-            </div>
-            <div class="line-30"></div>
-        </div>
-    </footer>
+    <div class="footer-section">
+      <h4>Legalidade</h4>
+      <ul>
+        <li>Termos de Uso</li>
+        <li>Política de Privacidade</li>
+        <li>Política de Cookies</li>
+      </ul>
+    </div>
 
+    <div class="footer-section">
+      <h4>Contato</h4>
+      <ul>
+        <li><i class="fas fa-envelope"></i> Essence.Future@gmail.com</li>
+        <li><i class="fas fa-map-marker-alt"></i> Rua Pref. José Deliberador, 300 - Vila Thaide</li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="footer-bottom">
+    © 2025 - Essence and Future. Todos os direitos reservados.
+  </div>
+</footer>
 </body>
 </html>
