@@ -69,7 +69,7 @@
       <div class="icone">
         <i class="fa fa-bullseye"></i>
       </div>
-      <h3>Quem somos nós?</h3>
+      <h3>Quem somos nós?</h3><br>
     </div>
     <h4>
       A Essence and Future existe para inspirar pessoas a valorizarem sua essência e construírem um futuro com propósito. Acreditamos no potencial de cada um para transformar sua história e impactar o mundo de forma positiva.
@@ -81,7 +81,7 @@
       <div class="icone">
         <i class="fa fa-users"></i>
       </div>
-      <h3>O que você vai encontrar aqui?</h3>
+      <h3>O que você vai encontrar aqui?</h3><br>
     </div>
     <h4>
       Um espaço para sonhar, refletir e agir. Aqui você encontra inspiração, ferramentas e conteúdos que te ajudam a descobrir sua essência, definir seus objetivos e construir um futuro com mais propósito e autenticidade.
@@ -93,7 +93,7 @@
       <div class="icone">
         <i class="fa fa-cogs"></i>
       </div>
-      <h3>Meu Projeto de vida</h3>
+      <h3>Meu Projeto de vida</h3><br>
     </div>
     <h4>
     Meu projeto de vida é atuar no Direito, garantindo justiça e defendendo os direitos das pessoas. Quero construir uma carreira ética, oferecendo suporte legal e promovendo cidadania e igualdade, transformando vidas e contribuindo para uma sociedade mais justa.
@@ -111,39 +111,40 @@
 
 <br><br><br><br><br><br><br><br>
 
-    <footer>
-        <div class="footer-da-landing-page">
-            <div class="redes-sociais">Redes Sociais</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-            <div class="_2025-essence-and-future-todos-os-direitos-reservados">
-                © 2025 - Essence and Future. Todos os direitos reservados.
-            </div>
+    <footer class="footer-da-landing-page">
+  <div class="footer-container">
 
-            <div class="instagram-essence-and-future">
-                Instagram: @Essence_and_Future
-            </div>
-            
-            <div class="facebook-essence-and-future">Facebook: Essence and Future</div>
-            <div class="telefone-18-997770741">Telefone: (18) 997770741</div>
-            <div class="line-28"></div>
-            <div class="avisos-legais">Avisos Legais</div>
-            <div class="termos-de-uso">Termos de Uso</div>
-            <div class="pol-tica-de-privacidade">Política de Privacidade</div>
-            <div class="pol-tica-de-cookies">Política de Cookies</div>
-            <div class="line-29"></div>
-            <div class="contato">Contato</div>
-            <div class="e-mail-essence-future-gmail-com">
-                E-mail: Essence.Future@gmail.com
-            </div>
-            <div class="endere-o-rua-pref-jos-deliberador-300-vila-thaide">
-                Endereço: Rua Pref. José Deliberador, 300 -
-                <br />
-                Vila Thaide
-            </div>
-            <div class="line-30"></div>
-        </div>
-    </footer>
+    <div class="footer-section">
+      <h3>Redes Sociais</h3>
+      <div class="line"></div>
+      <p><i class="fab fa-instagram"></i> @essence_and_future</p>
+      <p><i class="fab fa-facebook"></i> /essenceandfuture</p>
+      <p><i class="fas fa-phone"></i> (18) 99777-0741</p>
+    </div>
 
+    <div class="footer-section">
+      <h3>Avisos Legais</h3>
+      <div class="line"></div>
+      <p><i class="fas fa-gavel"></i> <a href="#">Termos de Uso</a></p>
+      <p><i class="fas fa-user-shield"></i> <a href="#">Política de Privacidade</a></p>
+      <p><i class="fas fa-cookie-bite"></i> <a href="#">Política de Cookies</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <div class="line"></div>
+      <p><i class="fas fa-envelope"></i> essence.future@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Rua Pref. José Deliberador, 300 - Vila Thaíde</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Essence and Future — Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 
+* {
+  margin: 0;
+}
 
+html, body {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
 
 body {
     font-family: "Quicksand";
@@ -18,14 +25,11 @@ body {
     font-size: 1.5rem;
   }
 
-
-
-
   .group-6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-top: 20px;
   }
 
@@ -49,14 +53,14 @@ body {
     width: 300px; /* ajuste conforme necessário */
   }
 
-  .teste-de-direito, .teste-para-ju-z {
+  .teste-de-direito {
     color: #ffffff;
     text-align: center;
     font-family: "Lustria-Regular", sans-serif;
     font-size: 20px;
     font-weight: 400;
     position: absolute;
-    top: 65px;
+    top: 55px;
     width: 100%;
   }
 
@@ -106,30 +110,110 @@ body {
     font-weight: 500;
   }
 
-.header-content {
+  .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Adicionado: distribui menu à esquerda e botão à direita */
   align-items: center;
-  padding: 10px 30px;
-  position: relative;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-  .botao-voltar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #ffffff; /* cor do texto */
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+.botao-voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  /* Remova o margin-left: auto; pois estamos usando space-between agora */
+}
+
+
+
+.botao-voltar {
+  margin-left: auto;
+}
+
+
+header {
+    background-color: #19498d;
+    padding: 10px 20px;
+    position: relative;
   }
   
-  .botao-voltar img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+.menu-hamburguer {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
   }
+  
+.menu-hamburguer span {
+  display: block;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+}
+  
+.menu-container {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  background: #13548e;
+  padding: 10px;
+  display: none;
+  gap: 6px;
+  flex-direction: column;
+  border-radius: 4px;
+}
+  
+.menu-container a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+  
+.menu-hamburguer {
+    width: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px; 
+    cursor: pointer;
+    padding: 8px 0; 
+}
+  
+  .menu-hamburguer span {
+    display: block;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+  }
+
+  .menu-container a:hover {
+   color: #9ed0f4;
+  }
+  
+  .menu-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-wrapper:hover .menu-container {
+    display: flex;
+  }
+
+
+.logo img {
+  height: 50px;
+  object-fit: contain;
+}
 
   .login-container {
     display: flex;
@@ -305,7 +389,7 @@ body {
   font-weight: 200;
   font-style: italic;
   position: absolute;
-  left: 1370px;
+  left: 1350px;
   top: 400px;
   width: 363px;
   height: 93px;
@@ -1321,282 +1405,58 @@ body {
     top: 410px;
   }
   
-  .footer-da-landing-page,
-  .footer-da-landing-page * {
-    box-sizing: border-box;
-  }
-  footer {
-      clear: both; /* Faz com que o footer sempre seja exibido após o conteúdo anterior */
-      position: relative;
-      bottom: 0;
-      width: 1905px;
-      padding: 20px 0;
-      background-color: #125993; /* Cor de fundo do footer */
-      text-align: center;
-    }
-    
-    .footer-da-landing-page {
-      width: 1905px;
-      margin: auto;
-      padding: 0 20px;
-    }
+ .footer-da-landing-page {
+  background: #125993;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Lustria-Regular", sans-serif;
+}
 
-    .footer-do-sobre-mim{
-      margin-top: 50px;
-      width: 1000px;
-      padding: 0 20px;
-      height: 220px;
-    }
-  
-  .redes-sociais {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 31px;
-  }
-  
-  ._2025-essence-and-future-todos-os-direitos-reservados {
-    color: rgba(255, 255, 255, 0.44);
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 530px;
-    top: 203px;
-  }
-  
-  .instagram-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 76px;
-  }
-  
-  .facebook-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 104px;
-  }
-  
-  .telefone-18-997770741 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 132px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .footer-da-landing-page,
-  .footer-da-landing-page * {
-    box-sizing: border-box;
-  }
-  
-  .footer-da-landing-page {
-    background: #125993;
-    height: 243px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .redes-sociais {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 31px;
-  }
-  
-  ._2025-essence-and-future-todos-os-direitos-reservados {
-    color: rgba(255, 255, 255, 0.44);
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 530px;
-    top: 203px;
-  }
-  
-  .instagram-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 76px;
-  }
-  
-  .facebook-essence-and-future {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 104px;
-  }
-  
-  .telefone-18-997770741 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 117px;
-    top: 132px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .line-28 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 99px;
-    height: 0px;
-    position: absolute;
-    left: 117px;
-    top: 50px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
-  .avisos-legais {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 31px;
-  }
-  
-  .termos-de-uso {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 67px;
-  }
-  
-  .pol-tica-de-privacidade {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 95px;
-  }
-  
-  .pol-tica-de-cookies {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 605px;
-    top: 123px;
-    width: 162px;
-    height: 18px;
-  }
-  
-  .line-29 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 99px;
-    height: 0px;
-    position: absolute;
-    left: 604px;
-    top: 50px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
-  .contato {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 1161px;
-    top: 31px;
-  }
-  
-  .e-mail-essence-future-gmail-com {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 1093px;
-    top: 71px;
-  }
-  
-  .endere-o-rua-pref-jos-deliberador-300-vila-thaide {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Lustria-Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    left: 1093px;
-    top: 99px;
-    width: 284px;
-  }
-  
-  .line-30 {
-    margin-top: -1px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px 0 0 0;
-    width: 59px;
-    height: 0px;
-    position: absolute;
-    left: 1168px;
-    top: 52px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  text-align: justify;
+}
 
+.footer-section {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.footer-section h3 {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: justify;
+  margin-top: 30px;
+  font-size: 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom p{
+  text-align: center;
+  font-size: 15px
+}
+  
   .container{
     align-items: center;
   }
@@ -1631,8 +1491,6 @@ body {
     background-color: rgb(4, 58, 102);
   }
   
-
-
 .group-8 {
     display: flex;
     flex-direction: row;
@@ -1915,7 +1773,6 @@ body {
   line-height: 1.6;
 }
 
-/* Seção Editável */
 .editable-card {
   background: #f0f8ff;
   padding: 30px;
@@ -1958,7 +1815,6 @@ button:hover {
   font-weight: 500;
 }
 
-
 .cabecalho {
     background-color: #1b263b;
     padding: 20px 40px;
@@ -1967,7 +1823,6 @@ button:hover {
     align-items: center;
 }
 
-/* Hero */
 .hero {
   width: 100%;
   background: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)),
@@ -2005,7 +1860,6 @@ button:hover {
     background-color: #3c8aa0;
 }
 
-
 .hero {
   background: linear-gradient(rgba(13, 27, 42, 0.6), rgba(13, 27, 42, 0.6)),
               url('https://img.freepik.com/fotos-premium/um-grupo-de-pessoas-de-maos-dadas-no-meio-de-um-circulo-com-as-maos-umas-em-cima-das-outras_214111-441.jpg') no-repeat center center/cover;
@@ -2026,7 +1880,6 @@ button:hover {
   margin: 0 auto 20px;
 }
 
-/* Botão */
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -2064,9 +1917,6 @@ button:hover {
   color: #ffffff;
 }
 
-
-
-/* Encerramento */
 .encerramento {
   color: #585858;
 }
@@ -2140,13 +1990,10 @@ button:hover {
   color: #465776;
 }
 
-
-
-
-
 .atuacao-timeline {
   background-color: #102a45;
   width: 100%;
+  margin: 0%;
   padding: 60px 20px;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   color: #ffffff;
@@ -2187,7 +2034,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px; /* leve ajuste para alinhar com texto */
+  margin-top: 4px; 
 }
 
 .timeline-entry .content {

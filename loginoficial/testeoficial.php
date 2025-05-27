@@ -17,11 +17,14 @@
           <span></span>
         </div>
         <div class="menu-container">
-          <a href="landingpage.php">Home</a>
-          <a href="teste.php">Teste de personalidade</a>
-          <a href="#">Serviços</a>
-          <a href="#">Contato</a>
-        </div>
+        <a href="landingpage.php">Home</a>
+        <a href="teste.php">Testes de personalidade</a>
+        <a href="sobremim.php">Sobre mim</a>
+        <a href="direito.php">Sobre o Direito</a>
+        <a href="juiz.php">O que é ser um Juíz?</a>
+        <a href="perfil.php">Meu perfil</a>
+        <a href="sair.php">Sair da minha conta</a>
+      </div>
       </div>
 
       <a href="javascript:history.back()" class="botao-voltar">
@@ -106,25 +109,41 @@ for ($i = 0; $i < 3; $i++) {
   </form>
 </div>
 
-
 <script>
   let etapa = 0;
   const steps = document.querySelectorAll(".step");
   const btnResultado = document.getElementById("btnResultado");
+  const form = document.getElementById("formulario-teste");
 
   function mostrarEtapa(n) {
     steps.forEach((step, i) => {
       step.classList.toggle("active", i === n);
     });
 
-    if (n === steps.length - 1) {
-      btnResultado.style.display = "inline-block";
-    } else {
-      btnResultado.style.display = "none";
-    }
+    btnResultado.style.display = (n === steps.length - 1) ? "inline-block" : "none";
   }
 
   function avancar() {
+    // Verifica se todas as perguntas da etapa atual estão respondidas
+    const currentStep = steps[etapa];
+    const radios = currentStep.querySelectorAll('input[type="radio"]');
+    const names = new Set();
+
+    let allAnswered = true;
+    radios.forEach((radio) => names.add(radio.name));
+
+    names.forEach((name) => {
+      const checked = currentStep.querySelector(`input[name="${name}"]:checked`);
+      if (!checked) {
+        allAnswered = false;
+      }
+    });
+
+    if (!allAnswered) {
+      alert("Por favor, responda todas as perguntas antes de avançar.");
+      return;
+    }
+
     if (etapa < steps.length - 1) {
       etapa++;
       mostrarEtapa(etapa);
@@ -137,42 +156,49 @@ for ($i = 0; $i < 3; $i++) {
       mostrarEtapa(etapa);
     }
   }
+
+  // Mostrar primeira etapa ao carregar
+  mostrarEtapa(etapa);
 </script>
 
 
 
-<footer>
-        <div class="footer-da-landing-page">
-            <div class="redes-sociais">Redes Sociais</div>
 
-            <div class="_2025-essence-and-future-todos-os-direitos-reservados">
-                © 2025 - Essence and Future. Todos os direitos reservados.
-            </div>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-            <div class="instagram-essence-and-future">
-                Instagram: @Essence_and_Future
-            </div>
-            
-            <div class="facebook-essence-and-future">Facebook: Essence and Future</div>
-            <div class="telefone-18-997770741">Telefone: (18) 997770741</div>
-            <div class="line-28"></div>
-            <div class="avisos-legais">Avisos Legais</div>
-            <div class="termos-de-uso">Termos de Uso</div>
-            <div class="pol-tica-de-privacidade">Política de Privacidade</div>
-            <div class="pol-tica-de-cookies">Política de Cookies</div>
-            <div class="line-29"></div>
-            <div class="contato">Contato</div>
-            <div class="e-mail-essence-future-gmail-com">
-                E-mail: Essence.Future@gmail.com
-            </div>
-            <div class="endere-o-rua-pref-jos-deliberador-300-vila-thaide">
-                Endereço: Rua Pref. José Deliberador, 300 -
-                <br />
-                Vila Thaide
-            </div>
-            <div class="line-30"></div>
-        </div>
-    </footer>
+    <footer class="footer-da-landing-page">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Redes Sociais</h3>
+      <div class="line"></div>
+      <p><i class="fab fa-instagram"></i> @essence_and_future</p>
+      <p><i class="fab fa-facebook"></i> /essenceandfuture</p>
+      <p><i class="fas fa-phone"></i> (18) 99777-0741</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Avisos Legais</h3>
+      <div class="line"></div>
+      <p><i class="fas fa-gavel"></i> <a href="#">Termos de Uso</a></p>
+      <p><i class="fas fa-user-shield"></i> <a href="#">Política de Privacidade</a></p>
+      <p><i class="fas fa-cookie-bite"></i> <a href="#">Política de Cookies</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contato</h3>
+      <div class="line"></div>
+      <p><i class="fas fa-envelope"></i> essence.future@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Rua Pref. José Deliberador, 300 - Vila Thaíde</p>
+    </div>
+
+  </div>
+<br>
+  <div class="footer-bottom">
+    <p>© 2025 Essence and Future — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
 
 
 </body>
